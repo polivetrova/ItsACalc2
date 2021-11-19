@@ -4,6 +4,5 @@ public enum Operations {
     ADD,
     SUB,
     DIV,
-    MULT,
-    PERCENT
+    MULT
 }

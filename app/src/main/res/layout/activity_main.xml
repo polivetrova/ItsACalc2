@@ -15,7 +15,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:inputType="number"
-        tools:textSize="@dimen/_40ssp"
+        android:textSize="@dimen/_30ssp"
         tools:text="33400"
         android:gravity="center_vertical|end"
         android:textColor="@color/white"
