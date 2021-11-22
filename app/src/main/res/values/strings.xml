@@ -16,6 +16,6 @@
     <string name="key_2">2</string>
     <string name="key_1">1</string>
     <string name="key_0">0</string>
-    <string name="key_point">•</string>
+    <string name="key_point">.</string>
     <string name="key_equals">=</string>
 </resources>
