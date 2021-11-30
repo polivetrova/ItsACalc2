@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingTop="60dp">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_16ssp"
+            android:gravity="center_horizontal"
+            android:text="@string/settings"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp" />
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_theme"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16ssp"
+        android:layoutDirection="rtl">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/blue_orangeade"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/blue_and_grey"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+    </RadioGroup>
+
+</LinearLayout>

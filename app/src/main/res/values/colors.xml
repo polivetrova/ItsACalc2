@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="orange_button">#F2A56F</color>
     <color name="gray_button">#8097C0</color>
+    <color name="dark_gray_button">#35373B</color>
+    <color name="dark_orange_button">#B58255</color>
+    <color name="gray">#d3d4d7</color>
 </resources>
