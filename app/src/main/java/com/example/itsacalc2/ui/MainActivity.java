@@ -10,14 +10,16 @@ import android.widget.EditText;
 
 import com.example.itsacalc2.R;
 import com.example.itsacalc2.domain.CalcImpl;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textview.MaterialTextView;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity implements CalcView {
 
-    Button percentButton, multiplyButton, minusButton, plusButton, divideButton, pointButton, deleteButton, equalsButton;
-    EditText editText;
+    MaterialButton percentButton, multiplyButton, minusButton, plusButton, divideButton, pointButton, deleteButton, equalsButton;
+    MaterialTextView editText;
 
     private CalcPresenter calcPresenter;
 
