@@ -22,6 +22,7 @@
         <item name="colorSecondaryVariant">@color/dark_orange_button</item>
         <item name="colorOnSecondary">@color/gray</item>
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="materialButtonStyle">@style/CalculatorButtons</item>
     </style>
 
 
