@@ -7,19 +7,20 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.itsacalc2.R;
 import com.example.itsacalc2.domain.CalcImpl;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textview.MaterialTextView;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity implements CalcView {
 
-    Button percentButton, multiplyButton, minusButton, plusButton, divideButton, pointButton, deleteButton, equalsButton;
-    EditText editText;
+    MaterialButton percentButton, multiplyButton, minusButton, plusButton, divideButton, pointButton, deleteButton, equalsButton;
+    MaterialTextView editText;
 
     private static final String appTheme = "APP_THEME";
     private static final String nameSharedPreference = "THEME";

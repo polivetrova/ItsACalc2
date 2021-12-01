@@ -4,6 +4,7 @@ import android.widget.Button;
 
 import com.example.itsacalc2.domain.CalcModel;
 import com.example.itsacalc2.domain.Operations;
+import com.google.android.material.button.MaterialButton;
 
 public class CalcPresenter {
     private final CalcModel calcModel;
@@ -23,7 +24,7 @@ public class CalcPresenter {
         calcView.showResult(editTextContent + integer);
     }
 
-    public void onPointPressed(String editTextContent, Button pointButton) {
+    public void onPointPressed(String editTextContent, MaterialButton pointButton) {
         calcView.showResult(editTextContent + pointButton.getText().toString());
     }
 
@@ -41,7 +42,7 @@ public class CalcPresenter {
         doAddition = true;
     }
 
-    public void onMinusPressed(String editTextContent, Button minus) {
+    public void onMinusPressed(String editTextContent, MaterialButton minus) {
         saveFirstValue(editTextContent);
         if (valueOne == 0.0f) {
             calcView.showResult(minus.getText().toString());
