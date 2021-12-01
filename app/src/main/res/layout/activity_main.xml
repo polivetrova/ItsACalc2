@@ -38,54 +38,54 @@
             android:id="@+id/key_percent"
             style="@style/CalculatorButtons"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/orange_button"
+            android:backgroundTint="?attr/colorSecondary"
             android:text="@string/key_percent" />
 
         <Button
             android:id="@+id/key_multipl"
             style="@style/CalculatorButtons"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/orange_button"
+            android:backgroundTint="?attr/colorSecondary"
             android:text="@string/key_multipl" />
 
         <Button
             android:id="@+id/key_divide"
             style="@style/CalculatorButtons"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/orange_button"
+            android:backgroundTint="?attr/colorSecondary"
             android:text="@string/key_divide" />
 
         <Button
             android:id="@+id/key_delete"
             style="@style/CalculatorButtons"
-            android:backgroundTint="@color/orange_button"
+            android:backgroundTint="?attr/colorSecondary"
             android:text="@string/key_delete" />
 
         <Button
             android:id="@+id/key_7"
             style="@style/CalculatorButtons"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/gray_button"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_7" />
 
         <Button
             android:id="@+id/key_8"
             style="@style/CalculatorButtons"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/gray_button"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_8" />
 
         <Button
             android:id="@+id/key_9"
             style="@style/CalculatorButtons"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/gray_button"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_9" />
 
         <Button
             android:id="@+id/key_plus"
             style="@style/CalculatorButtons"
-            android:backgroundTint="@color/orange_button"
+            android:backgroundTint="?attr/colorSecondary"
             android:text="@string/key_plus" />
 
         <Button
@@ -93,13 +93,13 @@
             style="@style/CalculatorButtons"
             android:layout_column="2"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/gray_button"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_6" />
 
         <Button
             android:id="@+id/key_minus"
             style="@style/CalculatorButtons"
-            android:backgroundTint="@color/orange_button"
+            android:backgroundTint="?attr/colorSecondary"
             android:text="@string/key_minus" />
 
         <Button
@@ -107,7 +107,7 @@
             style="@style/CalculatorButtons"
             android:layout_column="1"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/gray_button"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_5" />
 
         <Button
@@ -115,7 +115,7 @@
             style="@style/CalculatorButtons"
             android:layout_column="0"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/gray_button"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_4" />
 
         <Button
@@ -123,7 +123,7 @@
             style="@style/CalculatorButtons"
             android:layout_column="2"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/gray_button"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_3" />
 
         <Button
@@ -131,7 +131,7 @@
             style="@style/CalculatorButtons"
             android:layout_column="1"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/gray_button"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_2" />
 
         <Button
@@ -139,7 +139,7 @@
             style="@style/CalculatorButtons"
             android:layout_column="0"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/gray_button"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_1" />
 
         <Button
@@ -150,7 +150,7 @@
             android:layout_columnSpan="2"
             android:layout_gravity="fill"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/gray_button"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_0"
             android:textSize="@dimen/_20ssp" />
 
@@ -158,7 +158,7 @@
             android:id="@+id/key_point"
             style="@style/CalculatorButtons"
             android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/gray_button"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_point" />
 
         <Button
@@ -170,7 +170,7 @@
             android:layout_rowSpan="2"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:backgroundTint="@color/orange_button"
+            android:backgroundTint="?attr/colorSecondary"
             android:text="@string/key_equals"
             android:textSize="@dimen/_20ssp" />
 

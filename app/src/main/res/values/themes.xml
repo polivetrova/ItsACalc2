@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.Blue_Orangeade" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/gray_button</item>
-        <item name="colorPrimaryVariant">@color/gray_button</item>
+        <item name="colorPrimary">@color/blueish_button</item>
+        <item name="colorPrimaryVariant">@color/blueish_button</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/orange_button</item>
@@ -15,14 +15,13 @@
     </style>
 
     <style name="Blue_and_Gray" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <item name="colorPrimary">@color/dark_gray_button</item>
-        <item name="colorPrimaryVariant">@color/dark_gray_button</item>
+        <item name="colorPrimary">@color/gray_button</item>
+        <item name="colorPrimaryVariant">@color/gray_button</item>
         <item name="colorOnPrimary">@color/gray</item>
-        <item name="colorSecondary">@color/dark_orange_button</item>
-        <item name="colorSecondaryVariant">@color/dark_orange_button</item>
+        <item name="colorSecondary">@color/dark_blue_button</item>
+        <item name="colorSecondaryVariant">@color/dark_blue_button</item>
         <item name="colorOnSecondary">@color/gray</item>
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <item name="materialButtonStyle">@style/CalculatorButtons</item>
     </style>
 
 

@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,19 +21,24 @@ public class MainActivity extends AppCompatActivity implements CalcView {
     Button percentButton, multiplyButton, minusButton, plusButton, divideButton, pointButton, deleteButton, equalsButton;
     EditText editText;
 
-    private CalcPresenter calcPresenter;
+    private static final String appTheme = "APP_THEME";
+    private static final String nameSharedPreference = "THEME";
+    protected static final int themeBlueOrangeade = 0;
+    protected static final int themeBlueAndGray = 1;
+
+    protected CalcPresenter calcPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        setTheme(getAppTheme(R.style.Theme_Blue_Orangeade));
+
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.settings_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
-                startActivity(intent);
-            }
+        findViewById(R.id.settings_button).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            startActivity(intent);
         });
 
         calcPresenter = new CalcPresenter(new CalcImpl(), this);
@@ -88,6 +94,33 @@ public class MainActivity extends AppCompatActivity implements CalcView {
         percentButton.setOnClickListener(v -> calcPresenter.onPercentPressed(getEditTextContents()));
 
         equalsButton.setOnClickListener(v -> calcPresenter.onEqualsPressed(getEditTextContents()));
+    }
+
+    protected void setAppTheme(int codeStyle) {
+        SharedPreferences sharedPref = getSharedPreferences(nameSharedPreference, MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putInt(appTheme, codeStyle);
+        editor.apply();
+        recreate();
+    }
+
+    private int getAppTheme(int codeStyle) {
+        return codeStyleToStyleId(getCodeStyle(codeStyle));
+    }
+
+    private int codeStyleToStyleId(int codeStyle) {
+        switch (codeStyle){
+            case themeBlueOrangeade:
+                return R.style.Theme_Blue_Orangeade;
+            case themeBlueAndGray:
+                return R.style.Blue_and_Gray;
+        }
+        return R.style.Theme_Blue_Orangeade;
+    }
+
+    protected int getCodeStyle(int codeStyle) {
+        SharedPreferences sharedPreferences = getSharedPreferences(nameSharedPreference, MODE_PRIVATE);
+        return sharedPreferences.getInt(appTheme, codeStyle);
     }
 
     @NonNull

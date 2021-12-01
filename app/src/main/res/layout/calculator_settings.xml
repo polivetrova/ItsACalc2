@@ -21,7 +21,7 @@
         android:gravity="center_horizontal"
         android:text="@string/settings"
         android:textAllCaps="true"
-        android:textColor="@color/white"
+        android:textColor="?attr/colorOnPrimary"
         android:textSize="@dimen/_20ssp"
         android:textStyle="bold" />
 
@@ -30,29 +30,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/choose_theme"
-        android:textColor="@color/white"
+        android:textColor="?attr/colorOnPrimary"
         android:textSize="@dimen/_16ssp" />
 
     <RadioGroup
+        android:id="@+id/radio_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_16ssp"
-        android:layoutDirection="rtl"
-        android:checkedButton="@id/default_theme_button">
+        android:layoutDirection="rtl">
 
         <com.google.android.material.radiobutton.MaterialRadioButton
-            android:id="@+id/default_theme_button"
+            android:id="@+id/blue_orangeade_theme_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/blue_orangeade"
-            android:textColor="@color/white"
+            android:textColor="?attr/colorOnPrimary"
             android:textSize="@dimen/_16ssp" />
 
         <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/blue_and_gray_theme_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/blue_and_grey"
-            android:textColor="@color/white"
+            android:textColor="?attr/colorOnPrimary"
             android:textSize="@dimen/_16ssp" />
 
     </RadioGroup>
