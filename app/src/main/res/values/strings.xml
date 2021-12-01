@@ -23,4 +23,5 @@
     <string name="blue_orangeade">Blue Orangeade</string>
     <string name="blue_and_grey"><![CDATA[Blue & Grey]]></string>
     <string name="back_button">←</string>
+    <string name="button_settings">⚙</string>
 </resources>

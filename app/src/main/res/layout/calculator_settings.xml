@@ -7,16 +7,23 @@
     android:padding="16dp"
     android:paddingTop="60dp">
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        android:tint="@color/white" />
 
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_16ssp"
-            android:gravity="center_horizontal"
-            android:text="@string/settings"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_20ssp" />
-
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16ssp"
+        android:gravity="center_horizontal"
+        android:text="@string/settings"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold" />
 
 
     <com.google.android.material.textview.MaterialTextView
@@ -30,9 +37,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_16ssp"
-        android:layoutDirection="rtl">
+        android:layoutDirection="rtl"
+        android:checkedButton="@id/default_theme_button">
 
         <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/default_theme_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/blue_orangeade"

@@ -14,9 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-
-
-    <style name="Blue_and_Gray" parent="Theme.Blue_Orangeade">
+    <style name="Blue_and_Gray" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="colorPrimary">@color/dark_gray_button</item>
         <item name="colorPrimaryVariant">@color/dark_gray_button</item>
         <item name="colorOnPrimary">@color/gray</item>
@@ -24,7 +22,6 @@
         <item name="colorSecondaryVariant">@color/dark_orange_button</item>
         <item name="colorOnSecondary">@color/gray</item>
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <item name="android:background">@drawable/bckgrndDark</item>
     </style>
 
 
