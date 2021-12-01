@@ -13,9 +13,9 @@
         android:id="@+id/settings_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="start"
         android:src="@drawable/ic_settings"
-        android:tint="@color/white"
-        android:layout_gravity="start" />
+        android:tint="@color/white" />
 
     <EditText
         android:id="@+id/edit_text"

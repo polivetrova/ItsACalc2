@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements CalcView {
         findViewById(R.id.settings_button).setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
             startActivity(intent);
+            finish();
         });
 
         calcPresenter = new CalcPresenter(new CalcImpl(), this);
@@ -109,7 +110,7 @@ public class MainActivity extends AppCompatActivity implements CalcView {
     }
 
     private int codeStyleToStyleId(int codeStyle) {
-        switch (codeStyle){
+        switch (codeStyle) {
             case themeBlueOrangeade:
                 return R.style.Theme_Blue_Orangeade;
             case themeBlueAndGray:
@@ -132,4 +133,5 @@ public class MainActivity extends AppCompatActivity implements CalcView {
     public void showResult(String result) {
         editText.setText(result);
     }
+
 }

@@ -1,5 +1,6 @@
 package com.example.itsacalc2.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioGroup;
@@ -13,7 +14,11 @@ public class SettingsActivity extends MainActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculator_settings);
 
-        findViewById(R.id.back_arrow).setOnClickListener(v -> finish());
+        findViewById(R.id.back_arrow).setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(intent);
+            finish();
+        });
 
         initThemeChooser();
     }
@@ -22,13 +27,12 @@ public class SettingsActivity extends MainActivity {
         initRadioButton(findViewById(R.id.blue_orangeade_theme_button), themeBlueOrangeade);
         initRadioButton(findViewById(R.id.blue_and_gray_theme_button), themeBlueAndGray);
         RadioGroup rg = findViewById(R.id.radio_group);
-        ((MaterialRadioButton)rg.getChildAt(getCodeStyle(themeBlueOrangeade))).setChecked(true);
+        ((MaterialRadioButton) rg.getChildAt(getCodeStyle(themeBlueOrangeade))).setChecked(true);
     }
 
-    private void initRadioButton(View button, final int codeStyle){
+    private void initRadioButton(View button, final int codeStyle) {
         button.setOnClickListener(v -> {
             setAppTheme(codeStyle);
-            recreate();
         });
     }
 }
