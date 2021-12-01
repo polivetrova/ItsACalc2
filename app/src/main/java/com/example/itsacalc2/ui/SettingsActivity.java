@@ -31,8 +31,6 @@ public class SettingsActivity extends MainActivity {
     }
 
     private void initRadioButton(View button, final int codeStyle) {
-        button.setOnClickListener(v -> {
-            setAppTheme(codeStyle);
-        });
+        button.setOnClickListener(v -> setAppTheme(codeStyle));
     }
 }
