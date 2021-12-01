@@ -10,6 +10,14 @@
     android:paddingTop="60dp"
     android:theme="@style/CalcButtons">
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:src="@drawable/ic_settings"
+        android:tint="@color/white" />
+
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/edit_text"
         android:layout_width="fill_parent"
@@ -18,7 +26,7 @@
         android:gravity="center_vertical|end"
         android:inputType="number"
         android:textColor="@color/white"
-        android:textSize="@dimen/_40ssp"
+        android:textSize="@dimen/_30ssp"
         tools:text="33400" />
 
     <GridLayout
@@ -29,106 +37,137 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_percent"
+            style="@style/CalculatorButtons"
             android:layout_marginEnd="16dp"
             android:backgroundTint="?attr/colorSecondary"
             android:text="@string/key_percent" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_multipl"
+            style="@style/CalculatorButtons"
             android:layout_marginEnd="16dp"
             android:backgroundTint="?attr/colorSecondary"
             android:text="@string/key_multipl" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_divide"
+            style="@style/CalculatorButtons"
             android:layout_marginEnd="16dp"
             android:backgroundTint="?attr/colorSecondary"
             android:text="@string/key_divide" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_delete"
+            style="@style/CalculatorButtons"
             android:backgroundTint="?attr/colorSecondary"
             android:text="@string/key_delete" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_7"
+            style="@style/CalculatorButtons"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_7" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_8"
+            style="@style/CalculatorButtons"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_8" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_9"
+            style="@style/CalculatorButtons"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_9" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_plus"
+            style="@style/CalculatorButtons"
             android:backgroundTint="?attr/colorSecondary"
             android:text="@string/key_plus" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_6"
+            style="@style/CalculatorButtons"
             android:layout_column="2"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_6" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_minus"
+            style="@style/CalculatorButtons"
             android:backgroundTint="?attr/colorSecondary"
             android:text="@string/key_minus" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_5"
+            style="@style/CalculatorButtons"
             android:layout_column="1"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_5" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_4"
+            style="@style/CalculatorButtons"
             android:layout_column="0"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_4" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_3"
+            style="@style/CalculatorButtons"
             android:layout_column="2"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_3" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_2"
+            style="@style/CalculatorButtons"
             android:layout_column="1"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_2" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_1"
+            style="@style/CalculatorButtons"
             android:layout_column="0"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_1" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_0"
+            style="@style/CalculatorButtons"
             android:layout_columnSpan="2"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_0"
             android:textSize="@dimen/_20ssp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_point"
+            style="@style/CalculatorButtons"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/key_point" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/key_equals"
+            style="@style/CalculatorButtons"
             android:layout_row="3"
             android:layout_rowSpan="2"
+            android:layout_columnWeight="1"
             android:backgroundTint="?attr/colorSecondary"
-            android:text="@string/key_equals" />
+            android:text="@string/key_equals" 
+            android:textSize="@dimen/_20ssp"/>
 
     </GridLayout>
 

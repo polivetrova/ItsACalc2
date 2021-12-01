@@ -8,5 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="orange_button">#F2A56F</color>
-    <color name="gray_button">#8097C0</color>
+    <color name="blueish_button">#8097C0</color>
+    <color name="dark_blue_button">#647697</color>
+    <color name="gray_button">#9ca3b0</color>
+    <color name="gray">#f8feff</color>
 </resources>

@@ -42,7 +42,7 @@ public class CalcPresenter {
         doAddition = true;
     }
 
-    public void onMinusPressed(String editTextContent, Button minus) {
+    public void onMinusPressed(String editTextContent, MaterialButton minus) {
         saveFirstValue(editTextContent);
         if (valueOne == 0.0f) {
             calcView.showResult(minus.getText().toString());
